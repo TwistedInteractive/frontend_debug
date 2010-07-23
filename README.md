@@ -1,0 +1,1 @@
+This extension adds a debug-button to the frontend to quickly switch to the debugger.
