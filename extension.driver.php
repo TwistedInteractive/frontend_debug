@@ -42,9 +42,9 @@
 				if($context['parent']->Author->isDeveloper())
 				{
 					$context['output'] = str_replace('</head>', '
-						<link rel="stylesheet" type="text/css" media="screen,tv,projection" href="/extensions/frontend_debug/assets/frontend_debug.css" />
-						<script type="text/javascript" src="/symphony/assets/jquery.js"></script>
-						<script type="text/javascript" src="/extensions/frontend_debug/assets/frontend_debug.js"></script>
+						<link rel="stylesheet" type="text/css" media="screen,tv,projection" href="'.URL.'/extensions/frontend_debug/assets/frontend_debug.css" />
+						<script type="text/javascript" src="'.URL.'/symphony/assets/jquery.js"></script>
+						<script type="text/javascript" src="'.URL.'/extensions/frontend_debug/assets/frontend_debug.js"></script>
 						</head>', $context['output']);
 				}
 			}
