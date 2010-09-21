@@ -8,8 +8,8 @@
 		{
 			return array(
 				'name' => 'Frontend debugger container',
-				'version' => '1.0',
-				'release-date' => '2010-07-23',
+				'version' => '1.1',
+				'release-date' => '2010-09-21',
 				'author' => array(
 					'name' => 'Giel Berkers',
 					'website' => 'http://www.gielberkers.com',
