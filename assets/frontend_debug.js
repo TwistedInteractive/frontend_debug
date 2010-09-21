@@ -1,7 +1,7 @@
 jQuery(function($){
 	// Get the eventdata:
 	var eventData = document.body.lastChild.data;
-	if(String(eventData).match(/\<events/)==null)
+	if(String(eventData).match(/\<events/) == null)
 	{
 		eventData = "No eventdata found!\n\nhave you set 'display_event_xml_in_source' set to 'yes' in your 'manifest/config.php'-file?";
 	} else {
