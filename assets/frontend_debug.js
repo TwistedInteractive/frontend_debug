@@ -17,14 +17,12 @@ jQuery(function($){
 	$("#frontend_debug_container, #frontend_debug_events_container").hide();
 	
 	// Attach functionality to the show-button:
-	$("a#frontend_debug_show").hover(function(){
-		$(this).animate({top: 0}, 250);
-	}, function(){
-		$(this).animate({top: -5}, 250);
-	}).click(function(){
+	$("a#frontend_debug_show").click(function(){
+        $("a#frontend_debug_show,a#frontend_debug_events").removeClass("active");
 		$("#frontend_debug_events_container").hide();
 		if(document.getElementById("frontend_debug_container").style.display == 'none')
 		{
+            $("a#frontend_debug_show").addClass("active");
 			var location = String(window.location).split('#')[0];
 			location += location.split('?').length > 1 ? '&debug' : '?debug';
 			$("#frontend_debug_container").show();
@@ -50,14 +48,12 @@ jQuery(function($){
 	});
 	
 	// Attach functionality to the events-button:
-	$("a#frontend_debug_events").hover(function(){
-		$(this).animate({top: 0}, 250);
-	}, function(){
-		$(this).animate({top: -5}, 250);
-	}).click(function(){
+	$("a#frontend_debug_events").click(function(){
+        $("a#frontend_debug_show,a#frontend_debug_events").removeClass("active");
 		$("#frontend_debug_container").hide();
 		if(document.getElementById("frontend_debug_events_container").style.display == 'none')
 		{
+            $("a#frontend_debug_events").addClass("active");
 			var location = String(window.location).split('#')[0];
 			location += location.split('?').length > 1 ? '&debug' : '?debug';
 			$("#frontend_debug_events_container").show();

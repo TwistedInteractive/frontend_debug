@@ -8,8 +8,8 @@
 		{
 			return array(
 				'name' => 'Frontend debugger container',
-				'version' => '1.1',
-				'release-date' => '2010-09-21',
+				'version' => '1.2',
+				'release-date' => '2011-12-16',
 				'author' => array(
 					'name' => 'Giel Berkers',
 					'website' => 'http://www.gielberkers.com',
@@ -37,9 +37,9 @@
 		 */
 		public function addScriptToHeader($context)
 		{
-			if(!empty($context['parent']->Author))
+			if(!empty(Symphony::Engine()->Author))
 			{
-				if($context['parent']->Author->isDeveloper())
+				if(Symphony::Engine()->Author->isDeveloper())
 				{
 					$context['output'] = str_replace('</head>', '
 						<link rel="stylesheet" type="text/css" media="screen,tv,projection" href="'.URL.'/extensions/frontend_debug/assets/frontend_debug.css" />
