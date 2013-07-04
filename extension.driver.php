@@ -11,9 +11,8 @@
 				'version' => '1.2',
 				'release-date' => '2011-12-16',
 				'author' => array(
-					'name' => 'Giel Berkers',
-					'website' => 'http://www.gielberkers.com',
-					'email' => 'info@gielberkers.com'),
+					'name' => 'Twisted Interactive',
+					'website' => 'http://www.twisted.nl'),
 				'description' => 'Adds the debugger to the frontend of your website as a new panel'
 			);
 		}
